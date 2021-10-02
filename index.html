@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css" >
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>UDAY KIRAN PULASETTI</title>
+    </head>
+    <body>
+        <header>
+            <a class="logo" href="#"><I>PORTFOLIO</I></a>
+            <ul >
+                <nav id="mobilemenu">
+                    <li><a href="#" id="link" onclick="retriveBack()">Home</a></li>
+                    <li><a href="#about" id="link" onclick="retriveBack()">About</a></li>
+                    <li><a href="#skills" id="link" onclick="retriveBack()">Skills</a></li>
+                    <li><a href="#projects" id="link" onclick="retriveBack()">Projects</a></li>
+                    <li><a href="#contact" id="link"onclick="retriveBack()">Contact</a></li>
+                </nav>
+            </ul>
+
+            <a id="icon" onclick="myFun()">
+                <i class="fa fa-bars" onclick="retriveBack()" ></i>
+            </a>
+        </header>
+        
+        <section class="banner">
+            <div class="entrance">
+                <div style="font-size: 28px; font-weight: 400; font-family: cursive;">Hey, my name is</div>
+                <div class="name">UDAY KIRAN PULASETTI</div>
+                <h2 id="fullstack">Full stack developer...</h2>
+                <button class="hireme"><a href="#contact">Hire Me</a></button>
+            </div>      
+        </section>
+
+        <article id="about">
+            <h1 id="heading">About me</h1>
+            <div>
+                <div class="pic" id="bg-smoke">
+                    <div>
+                        <p>
+                          Hey, I'm a trained <span><b>Full Stack Developer.</b></span>
+                            Recently graduated from JNTU, kakinada university in the stream <b>ELECTRONICS & COMMUNICATION ENGINEERING</b>
+                            in <b>2021</b>. I did Internship at <b>Newton School</b> for six months which helps me to improve my Tech Stack
+                            and made me a complete Full stack Developer.
+                        </p>
+                        <a href="#education"><button class="readmore" id="knowless" onclick="dispEdu()">Know More</button></a>
+                    </div>
+                    <img src="./Images/udaykiran.jpg.jpg" alt="" height="400px" width="400px">
+                </div> 
+
+                <section id="education" style="display: none;">
+                    <div class="edu-cont">
+                        <div class="edu">
+                            <div class="course">
+                                <h3>Bachelor's Of Technology</h3>
+                            </div>
+                        </div>
+        
+                        <div class="edu">
+                            <div class="edu-details">
+                                <ul>
+                                    <li>NRI INSTITUTE OF TECHNOLOGY, Vijayawada</li>
+                                    <li>Passed Out: 2021</li>
+                                    <li>Percentage/ CGPA: 6.75 / 10</li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <div class="edu">
+                            <div class="course">
+                                <h3>12th</h3>
+                            </div>
+                        </div>
+        
+                        <div class="edu">
+                            <div class="edu-details">
+                                <ul>
+                                    <li>MVR JUNIOR COLLEGE, Nuzvidd</li>
+                                    <li>Passed Out: 2017</li>
+                                    <li>Percentage/ CGPA: 969 / 1000</li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <div class="edu">
+                            <div class="course">
+                                <h3>10th</h3>
+                            </div>
+                        </div>
+        
+                        <div class="edu">
+                            <div class="edu-details">
+                                <ul>
+                                    <li>KUMAR E.M PUBLIC SCHOOL, Nuzvid</li>
+                                    <li>Passed Out: 2015</li>
+                                    <li>Percentage/ CGPA: 9.3</li>
+                                </ul>
+                            </div>
+                        </div>
+        
+        
+                    </div>
+                </section>
+
+            </div>
+        </article>
+
+        <article id="skills">
+            <h1 id="heading">My Skills</h1>
+            <div class="skilldetail"  id="bg-smoke">
+                <div class="content">
+                    <h2><b>My creative skills & Experiences</b></h2>
+                    <p id="ch">Some of the Skills i am good at are Web page design.
+                        I did some of the projects which you can see them in projects
+                        section. Here you can look how much i am good at my skills 
+                        through these bars.
+                    </p>
+                    <p id="para" class="paragraph"></p>
+                    <button class="readmore" onclick="dispPara()">Read More</button>
+                </div>
+                <div class="bars">
+                    <h3>JAVA</h3>
+                        <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-danger" role="progressbar"  style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+
+                      <h3>Data Structures</h3>
+                      <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+
+                      <h3>HTML</h3>
+                      <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+
+                      <h3>CSS</h3>
+                      <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+
+                      <h3>JAVA SCRIPT</h3>
+                      <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 65%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                </div>
+        </article>
+
+        <article id="projects">
+            <h1 id="heading">Projects</h1>
+            <div class="proj-cont">
+                <ul>
+                    <li>
+                        <a href=""><h4>Order Summary Card</h4></a>
+                        <ul>
+                            <li><p>Order summary of a purchase which contains details like price and about the product.</p></li>
+                            <li><p>Tech Stack : HTML, CSS</p></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href=""><h4>LOOPSTUDIO LANDING PAGE</h4></a>
+                        <ul>
+                            <li>
+                                <p>It is an responsive web site.
+                                    Design for a photography studio. Tells about the studio.
+                                </p>
+                            </li>
+                            <li> <p>Tech Stack : HTML, CSS, JAVASCRIPT</p></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href=""><h4>WEATHER REPORT OF CURRENT LOCATION </h4></a>
+                        <ul>
+                            <li><p>Tells about climate temperature and current location</p></li>
+                            <li><p>Tech Stack: HTML, CSS, JAVASCRIPT, API</p></li>
+                        </ul>      
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article id="contact">
+            <h1 id="heading">Contact Me</h1>
+            <div class="contact-cont">
+                <div class="det">
+                    <address> 
+                        <img src="Images/icons8-person-80.png" alt="" height="40px">
+                        <div>
+                            <div><b>Name</b></div>
+                            <div>Uday Kiran Pulasetti</div>
+                        </div>
+                    </address>
+    
+                    <address> 
+                        <img src="./Images/location.png" alt="" height="40px" width="40px">
+                        <div>
+                            <div><b>My location</b></div>
+                            <div>Nuzvid</div>
+                        </div>
+                    </address>
+                    <address> 
+                        <img src="Images/mail.png" alt="" height="40px">
+                        <div>
+                            <div><b>Mail</b></div>
+                            <div>udaykiranpulasetti@gmail.com</div>
+                        </div>
+                    </address>
+                    <address> 
+                        <img src="Images/linkedin.png" alt="" height="40px">
+                        <div><b><a href="" style="color: white; text-decoration: none;">LinkedIn</a></b></div>
+                    </address>
+                </div>
+         
+                <div class="form">
+                    <h3>Message Me</h3>
+                    <form action="">
+                        <input type="text" placeholder="Name" required>
+                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Subject">
+                        <div><input type="text" id="desc" placeholder="Description.."></div>
+
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+        </article>
+
+
+        <footer>
+            <div>
+                <p>Created By <span style="color: red;">UDAY KIRAN PULASETTI</span></p>
+            </div>
+            <div> <p>&copy; 2021. All rights reserved.</p></div>
+        </footer>
+        <script src="./script.js"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    </body>
+</html>

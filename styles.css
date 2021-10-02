@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Gemunu+Libre:wght@500&family=Oswald:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    z-index: 1;
+}
+header.sticky{
+    padding: 20px 80px;
+    background-color: red;
+    color: white;
+}
+header .logo{
+    position: relative;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: white;
+    cursor: pointer;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+    display:inline;
+}
+#mobilemenu{
+    line-height: 30px;
+}
+header ul li a {
+    position: relative;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 600px;
+    color: white; 
+    font-size: 22px;
+}
+.logo:hover, header ul li a:hover{
+    color: white;
+    opacity: 0.7;
+}
+header ul li:active{
+    border: white;
+}
+
+
+
+
+.entrance div{
+    line-height: 40px;
+}
+#bg-smoke{
+    background-color: whitesmoke;
+}
+.banner{
+    padding-left: 12px;
+    position: relative;
+    width: 100%;
+    background: url(./Images/Black\ Background.jfif) no-repeat center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.banner .name{
+    line-height: 50px;
+    letter-spacing: 10px;
+    font-size: 3vmax;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 12px 0 20px 0;
+    padding-top: 10px;
+}
+.banner #fullstack{
+    font-size: 5vmax;
+    white-space: nowrap;
+    width: 100%;
+    color: red;
+    overflow: hidden;
+    animation: type 3s steps(40) infinite;
+    font-family: 'Oswald', sans-serif;
+}
+.hireme{
+    margin-top: 20px;
+    font-size: 26px;
+    font-family:cursive;
+}
+.banner .hireme a{
+    padding: 5px 20px;
+    background:#dc3545;
+    color: white;
+    text-decoration: none;
+}
+.banner .hireme a:hover{
+    color: #dc3545;
+    background: white;
+    font-weight: 600;
+}
+#icon{
+    display: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+article{
+    padding-top: 130px;
+}
+#heading{
+    text-align: center;
+    font-weight: 400;
+    font-family: cursive;
+    background: #dc3545;
+    margin: 0 80px 50px 80px;
+    color: white;
+    padding: 10px;
+}
+#about .readmore{
+    margin-left: 12px;
+}
+.pic{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.pic p{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.pic p span{
+    font-size: 25px;
+    color: red;
+
+}
+article .pic img{
+    max-width: 100%;
+    height: auto;
+    padding: 25px;
+
+}
+.readmore{
+    padding: 12px 20px;
+    border-radius: 6px;
+    background: #dc3545;
+    color: white;
+    font-size: 20px;
+}
+.readmore:hover{
+    color: #dc3545;
+    background: white;
+    font-weight: 600;
+}
+.pic div{
+    max-width: 400px;
+    margin-top: 30px;
+}
+
+article{
+    margin: 0 10px;
+}
+
+#education{
+    padding-top: 60px;
+}
+.edu-cont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-gap: 16px;
+    background: whitesmoke;
+    padding: 25px;
+    font-size: 21px;
+}
+.edu .course{
+    text-align: right;
+    padding-right: 50px;
+}
+.edu-details ul{
+    border-left: red 3px solid;
+    font-family: cursive;
+    padding-left: 80px;
+}
+.edu-details ul li{
+    line-height: 30px;
+    font-weight: 700;
+}
+
+
+
+.skilldetail{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-top: 30px;
+}
+#skills .content{
+    max-width: 400px;
+    height: auto;
+    padding: 10px;
+    margin: 20px 10px 5px 10px;
+}
+#skills .bars{
+    width: 50%;
+}
+#ch, #para{
+    font-family: cursive;
+    font-size: 22px;
+}
+
+
+
+.proj-cont {
+    background: whitesmoke;
+    padding: 50px 0;
+    margin: auto;
+    max-width: 85vw;
+}
+.proj-cont ul:nth-child(1){
+    list-style: none;
+}
+.proj-cont p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+#contact{
+    padding-top: 130px;
+}
+.contact-cont{
+    background: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+    color: white;
+}
+address{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+}
+address img{
+    margin-right: 12px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+#desc{
+    height: 100px;
+}
+input[type=submit]{
+    padding: 10px 16px;
+    background: #dc3545;
+    color: white;
+    border-radius: 8px;
+}
+input[type=submit]:hover{
+    color: #dc3545;
+    background: white;
+}
+
+footer{
+    bottom: 0;
+    background: whitesmoke;
+    margin: 50px 50px 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    align-items: center;
+}
+
+
+
+@keyframes type {
+    from{
+        width: 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 1000px){ 
+    #icon{
+        display: block;
+    }
+
+    #mobilemenu{
+        display: none;
+        position: absolute;
+        top: 38px;
+        height: 100%;
+        background-color: black; 
+        padding: 50px 560px 1000px 400px;
+    }
+    #mobilemenu li a{
+        position:relative;
+        padding: 15px 1000px;
+        line-height: 50px;
+        left: 0;
+    }
+    #mobilemenu li a:hover{
+        background: white;
+        color: black;
+    }
+
+    article .pic{
+        flex-direction: column;
+    }
+    article h3{
+        margin-bottom: 30px;
+    }
+
+    .skilldetail{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #skills .bars{
+        width: 80%;
+    }
+    .w3{
+        grid-column: span 3;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 600px){
+    header .logo{
+        margin-left: -40px;
+    }
+    .entrance{
+        margin-left: 5%;
+    }
+    #icon{
+        right: 5;
+    }
+    .contact-cont{
+        flex-direction: column;
+    }
+    .det{
+        position: relative;
+        left: -20px;
+        margin-bottom: 50px;
+    }
+    #service-icon{
+        font-size: 40px;
+    }
+    .g1{
+        width: 280px;
+        font-size: 16px;
+    }
+    .readmore{
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    address{
+        margin-left: 50px;
+    }
+    address div, #projects p, .pic p, #heading, #ch, #education li{
+        font-size: 14px;
+    }
+    #projects h4, .pic p span, #para{
+        font-size: 18px;
+    }
+    .edu{
+        grid-column: span 2;
+    }
+}
