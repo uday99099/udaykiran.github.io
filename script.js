@@ -10,6 +10,7 @@ function myFun(){
     if(links.style.display === "block"){
         links.style.display = "none";
         cont.style.background = "";
+        retriveBack();
     }
     else{
         links.style.display = "block";
